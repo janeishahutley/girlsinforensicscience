@@ -828,26 +828,7 @@ body {
 
 @media (max-width: 932px) and (orientation: landscape) {
 
-  /* ===== GLOBAL SECTION SPACING ===== */
-  .section,
-  .aboutSection,
-  .visionSection,
-  .offersSection,
-  .registerSection {
-    padding-top: 72px;
-    padding-bottom: 72px;
-  }
-
-  /* ===== CONTAINER WIDTHS ===== */
-  .aboutSection__inner,
-  .visionSection__inner,
-  .elementsSection__inner,
-  .offersSection__inner,
-  .registerSection__inner {
-    max-width: 720px;
-  }
-
-  /* ===== ABOUT (match tablet layout) ===== */
+  /* ===== ABOUT ALIGNMENT ===== */
   .aboutSection__inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -856,55 +837,35 @@ body {
       "dots image"
       "text image";
     column-gap: 32px;
-    align-items: start;
+    align-items: stretch;
   }
 
-  .aboutSection__eyebrow {
-    font-size: 2.2rem;
-  }
-
-  .aboutSection__text {
-    font-size: 1.2rem;
-  }
-
-  .aboutSection__image {
-    min-height: 360px;
+  .aboutSection__imageWrapper {
+    grid-area: image;
     height: 100%;
   }
 
-  /* ===== VISION ===== */
-  .visionSection__title {
-    font-size: 2.2rem;
+  .aboutSection__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
 
-  .visionSection__text {
-    font-size: 1.2rem;
+  .aboutSection__text {
+    align-self: start;
   }
 
-  .visionSection__image {
-    width: 150px;
-    height: 150px;
-    top: -60px;
-    right: 32px;
-  }
-
-  /* ===== OFFERS ===== */
-  .offersSection__title,
-  .registerSection__title {
-    font-size: 2.2rem;
-  }
-
-  .offersCarousel__slide {
-    flex: 0 0 48%;
-    max-width: none;
+  /* ===== CAROUSEL IMAGE HEIGHT FIX ===== */
+  .offersCard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   .offersCard__image {
-    height: 240px;
+    height: 220px;
+    object-fit: cover;
   }
 
-  /* ===== REGISTER ===== */
-  .registerSection__iframe {
-    height: 1100px;
-  }
 }
