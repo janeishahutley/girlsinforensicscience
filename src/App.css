@@ -826,8 +826,7 @@ body {
   
 }
 @media (max-width: 932px) and (orientation: landscape) {
-
-  /* ===== HERO: make it feel like tablet ===== */
+  /* ===== HERO (keep as tablet-like) ===== */
   .hero {
     padding: 120px 32px 80px;
     background-position: center top;
@@ -855,16 +854,25 @@ body {
     min-width: 200px;
   }
 
-  /* ===== ABOUT: only fix the dots spacing ===== */
-  .aboutSection__dots {
-    margin-top: 0;
-    margin-bottom: 10px;
+  /* ===== ABOUT (match tablet + keep dots under About) ===== */
+  .aboutSection__inner {
+    max-width: 720px;
   }
 
-  /* ===== ABOUT: keep image aligned with text ===== */
+  .aboutSection__eyebrow {
+    grid-area: title;
+  }
+
+  .aboutSection__dots {
+    grid-area: dots;
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
   .aboutSection__imageWrapper {
-    align-self: stretch;
+    grid-area: image;
     margin-bottom: 0;
+    height: 100%;
   }
 
   .aboutSection__image {
@@ -875,7 +883,45 @@ body {
     display: block;
   }
 
-  /* ===== OFFERS: only make card images equal height ===== */
+  .aboutSection__text {
+    grid-area: text;
+    font-size: 1.2rem;
+  }
+
+  /* ===== VISION (match tablet sizing) ===== */
+  .visionSection__inner {
+    max-width: 720px;
+  }
+
+  .visionSection__title {
+    font-size: 2.2rem;
+  }
+
+  .visionSection__text {
+    font-size: 1.2rem;
+  }
+
+  .visionSection__image {
+    width: 150px;
+    height: 150px;
+    top: -60px;
+    right: 32px;
+  }
+
+  /* ===== OFFERS (match tablet sizing) ===== */
+  .offersSection__inner {
+    max-width: 720px;
+  }
+
+  .offersSection__title,
+  .registerSection__title {
+    font-size: 2.2rem;
+  }
+
+  .offersCarousel__slide {
+    min-width: 48%;
+  }
+
   .offersCard {
     display: flex;
     flex-direction: column;
@@ -885,5 +931,14 @@ body {
   .offersCard__image {
     height: 240px;
     object-fit: cover;
+  }
+
+  /* ===== REGISTER (match tablet sizing) ===== */
+  .registerSection__inner {
+    max-width: 720px;
+  }
+
+  .registerSection__iframe {
+    height: 1100px;
   }
 }
