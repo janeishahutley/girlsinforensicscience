@@ -828,17 +828,29 @@ body {
 
 @media (max-width: 932px) and (orientation: landscape) {
   .hero {
-    padding: 72px 20px 40px;
-    background-position: center center;
+    padding: 120px 32px 80px;
+    background-position: center top;
+  }
+
+  .hero__panel {
+    max-width: 720px;
+    margin: 0 auto;
   }
 
   .hero__title {
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    line-height: 1;
+    max-width: 650px;
   }
 
   .hero__actions {
     flex-direction: row;
-    gap: 12px;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .hero__button {
+    width: auto;
+    min-width: 200px;
   }
 }
