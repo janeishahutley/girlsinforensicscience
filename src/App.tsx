@@ -35,7 +35,12 @@ function App() {
               <span></span>
             </div>
             <div className="aboutSection__imageWrapper">
-              <img src="/girl2.jpeg" alt="Student participating in Girls in Forensics" className="aboutSection__image" />
+              <img 
+                // src="/girl2.jpeg" 
+                src={`${import.meta.env.BASE_URL}girl2.jpeg`}
+                alt="Student participating in Girls in Forensics" 
+                className="aboutSection__image" 
+              />
             </div>
             <p className="aboutSection__text">
               Girls in Forensic Science introduces students to applied scientific learning through
@@ -49,25 +54,29 @@ function App() {
        <section id="our-vision" className="visionSection">
   <div className="visionSection__inner">
     <img
-      src="/single-fingerprint.png"
+      // src="/single-fingerprint.png"
+      src={`${import.meta.env.BASE_URL}single-fingerprint.png`}
       alt="Fingerprint decoration"
       className="visionSection__image"
     />
 
     <img
-      src="/single-fingerprint.png"
+      // src="/single-fingerprint.png"
+      src={`${import.meta.env.BASE_URL}single-fingerprint.png`}
       alt=""
       className="visionSection__fp visionSection__fp--1"
     />
 
     <img
-      src="/single-fingerprint.png"
+      // src="/single-fingerprint.png"
+      src={`${import.meta.env.BASE_URL}single-fingerprint.png`}
       alt=""
       className="visionSection__fp visionSection__fp--2"
     />
 
     <img
-      src="/single-fingerprint.png"
+      // src="/single-fingerprint.png"
+      src={`${import.meta.env.BASE_URL}single-fingerprint.png`}
       alt=""
       className="visionSection__fp visionSection__fp--3"
     />

@@ -38,7 +38,8 @@ export default function WhatWeOffer() {
             <div className="offersCarousel__slide" key={offer.title}>
               <div className="offersCard">
                 <img
-                  src={offer.image}
+                  // src={offer.image}
+                  src={`${import.meta.env.BASE_URL}${offer.image}`}
                   alt={offer.title}
                   className="offersCard__image"
                 />

@@ -24,7 +24,8 @@ export default function Navbar() {
       <div className="navbar__top">
         <a href="#home" className="navbar__logo">
           <img
-            src="/logo.png"
+            // src="/logo.png"
+            src={`${import.meta.env.BASE_URL}logo.png`}
             alt="Girls in Forensics"
             className="navbar__logoImage"
           />
