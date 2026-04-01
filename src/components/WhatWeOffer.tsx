@@ -39,7 +39,7 @@ export default function WhatWeOffer() {
               <div className="offersCard">
                 <img
                   // src={offer.image}
-                  src={`${import.meta.env.BASE_URL}fingerprint.jpeg`}
+                  src={`${import.meta.env.BASE_URL}/fingerprint.jpeg`}
                   alt={offer.title}
                   className="offersCard__image"
                 />
