@@ -1,22 +1,22 @@
 export default function WhatWeOffer() {
   const offers = [
     {
-      image: "/fingerprint.jpeg",
+      image: "fingerprint.jpeg",
       title: "Hands-On Activities",
       text: "Students participate in engaging forensic science activities.",
     },
     {
-      image: "/blood.jpeg",
+      image: "blood.jpeg",
       title: "STEM Exposure",
       text: "Girls gain early exposure to science in a practical way.",
     },
     {
-      image: "/crime-scene.jpeg",
+      image: "crime-scene.jpeg",
       title: "Confidence Building",
       text: "Students build confidence through problem-solving and exploration.",
     },
     {
-      image: "/evidence.jpeg",
+      image: "evidence.jpeg",
       title: "Team Collaboration",
       text: "Students work together to investigate and think critically.",
     },
