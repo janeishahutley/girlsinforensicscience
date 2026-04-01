@@ -387,36 +387,102 @@ body {
   border-radius: 50%;
 }
 
-.offersCarousel {
+/* =========================
+   Offers SECTION
+========================= */
+
+.offersSection {
+  width: 100%;
+  padding: 48px 0;
+  background: #f4f9f9;
+  box-sizing: border-box;
+}
+
+.offersSection__inner {
+  max-width: 420px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.offersSection__title {
+  margin: 0 0 8px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.offersSection__dots {
   display: flex;
-  gap: 16px;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.offersSection__dots span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #2e7c83;
+  border-radius: 50%;
+}
+
+/* =========================
+   MOBILE CAROUSEL
+========================= */
+
+.offersCarousel {
+  position: relative;
+  display: flex;
+  gap: 12px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  padding-bottom: 8px;
+  padding: 0 4px 8px 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .offersCarousel::-webkit-scrollbar {
   display: none;
 }
 
-.offersCarousel {
-
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+.offersCarousel__slide {
+  min-width: 82%;
+  flex-shrink: 0;
+  scroll-snap-align: start;
 }
 
-.offersCarousel::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 100%;
-  background: linear-gradient(to right, transparent, #f4f9f9);
-  pointer-events: none;
+.offersCard {
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 4px 4px 0px rgba(46, 124, 131, 0.15);
 }
+
+.offersCard__image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.offersCard__title {
+  margin: 0;
+  padding: 16px 16px 6px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.offersCard__text {
+  margin: 0;
+  padding: 0 16px 20px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #222;
+}
+
 .offersSection__hint {
   margin-top: 12px;
   font-size: 0.85rem;
