@@ -825,23 +825,25 @@ body {
   }
   
 }
-
 @media (max-width: 932px) and (orientation: landscape) {
 
-  /* ===== ABOUT ALIGNMENT ===== */
+  /* ===== MATCH TABLET CONTAINERS ===== */
+  .aboutSection__inner,
+  .visionSection__inner,
+  .offersSection__inner,
+  .registerSection__inner {
+    max-width: 720px;
+  }
+
+  /* ===== ABOUT (FIX ALIGNMENT ONLY) ===== */
   .aboutSection__inner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "title image"
-      "dots image"
-      "text image";
     column-gap: 32px;
-    align-items: stretch;
+    align-items: stretch; /* keeps image + text same height */
   }
 
   .aboutSection__imageWrapper {
-    grid-area: image;
     height: 100%;
   }
 
@@ -849,22 +851,21 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
   }
 
-  .aboutSection__text {
-    align-self: start;
+  /* ===== OFFERS (MATCH TABLET WIDTH) ===== */
+  .offersCarousel__slide {
+    flex: 0 0 48%;
   }
 
-  /* ===== CAROUSEL IMAGE HEIGHT FIX ===== */
+  /* ===== FIX IMAGE HEIGHT CONSISTENCY ===== */
   .offersCard {
     display: flex;
     flex-direction: column;
-    height: 100%;
   }
 
   .offersCard__image {
-    height: 220px;
+    height: 240px; /* same as tablet */
     object-fit: cover;
   }
 
