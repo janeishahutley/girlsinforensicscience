@@ -11,7 +11,7 @@ export default function WhatWeOffer() {
     {
       title: "DNA Analysis",
       text: "Extract and analyze DNA profiles to link suspects and victims to a crime scene.",
-      image: "images/dna.jpg",
+      image: "samples.jpeg",
     },
     {
       title: "Fingerprint Analysis",

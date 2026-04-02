@@ -120,16 +120,6 @@ function App() {
           <p className="footer__copy">© 2026 Girls in Forensic Science (GFS). All rights reserved.</p>
         </div>
       </footer>
-      {/* <footer className="footer">
-        <h3>Contact Us</h3>
-        <div>
-
-          <MdMail size={22} color="fff"/>
-        </div>
-        <p className="footer__text">
-          © 2026 Girls in Forensic Science
-        </p>
-      </footer> */}
     </>
   ) 
 }
