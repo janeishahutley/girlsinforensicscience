@@ -66,19 +66,18 @@ export default function WhatWeOffer() {
             <span>For girls ages 8–17</span>
           </div>
           <div className="offersCallout__item">
+            <MdFamilyRestroom size={22} color="#d73332" />
+            <span>Final showcase for families</span>
+          </div>
+          <div className="offersCallout__item">
             <GiChemicalDrop size={22} color="#2e7c83" />
-            <span>Forensic kits included</span>
+            <span>Forensic kits and other materials included</span>
           </div>
           <div className="offersCallout__item">
             <MdSchool size={22} color="#888" />
             <span>Held at local schools, childcare programs, & summer camps</span>
           </div>
-          <div className="offersCallout__item">
-            <MdFamilyRestroom size={22} color="#d73332" />
-            <span>Final showcase for families</span>
-          </div>
         </div>
-
         <div className="offersCarousel">
           {offers.map((offer) => (
             <div className="offersCarousel__slide" key={offer.title}>
