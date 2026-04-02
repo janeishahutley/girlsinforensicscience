@@ -982,6 +982,17 @@ FOOTER SECTION
     min-height: 420px;
   }
 
+  .aboutSection__eyebrow {
+    margin: 0;
+    align-self: end;
+  }
+
+  .aboutSection__dots {
+    margin: 0;
+    align-self: start;
+    margin-top: 10px;
+  }
+
   .visionSection__inner {
     padding-right: 220px;
   }
