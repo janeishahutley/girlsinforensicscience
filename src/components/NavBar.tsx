@@ -8,7 +8,8 @@ export default function Navbar() {
     { label: "About Us", id: "about" },
     { label: "Our Vision", id: "our-vision" },
     { label: "What We Offer", id: "offers" },
-    { label: "Request More Info", id: "register" }
+    { label: "Request Info", id: "register" },
+    { label: "Contact Us", id: "contact" }
   ];
 
   const handleToggleMenu = () => {

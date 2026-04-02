@@ -35,7 +35,12 @@ export default function RegisterSection() {
   return (
     <section id="register" className="registerSection">
       <div className="registerSection__inner">
-        <h2 className="registerSection__title">Request More Info</h2>
+        <h2 className="registerSection__title">
+          Empower
+           <span className="registerSection__em"> Girls </span> 
+           Through          
+          <span className="registerSection__em"> Science</span>
+        </h2>
 
         <div className="visionSection__dots">
           <span></span>
