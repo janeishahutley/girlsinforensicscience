@@ -53,7 +53,7 @@ export default function WhatWeOffer() {
           </div>
           <div className="offersMeta__item">
             <span className="offersMeta__value">90<span className="offersMeta__unit"> Min</span></span>
-            <span className="offersMeta__label">Per Class</span>
+            <span className="offersMeta__label">Class/Week</span>
           </div>
           <div className="offersMeta__item">
             <span className="offersMeta__value">$300</span>
