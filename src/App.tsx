@@ -117,7 +117,7 @@ function App() {
               @girlsinforensicscience
             </a>
           </div>
-          <p className="footer__copy">© 2026 Girls in Forensic Science (GFS). All rights reserved.</p>
+          <p className="footer__copy">© 2026 Girls in Forensic Science (GFS), LLC. All rights reserved.</p>
         </div>
       </footer>
     </>
