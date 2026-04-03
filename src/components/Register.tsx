@@ -35,7 +35,7 @@ export default function RegisterSection() {
   return (
     <section id="register" className="registerSection">
       <div className="registerSection__inner">
-        <h2 className="registerSection__title">Empower Girls</h2>
+        <h2 className="registerSection__title">We empower Girls</h2>
 
         <div className="visionSection__dots">
           <span></span>
