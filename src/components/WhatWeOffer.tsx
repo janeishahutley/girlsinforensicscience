@@ -97,7 +97,7 @@ export default function WhatWeOffer() {
           ))}
         </div>
         <p className="offersSection__hint">
-          Swipe to explore the exciting topics we will learn            
+          Swipe to explore the exciting topics we will cover            
           <MdArrowRight size={28} color={"#2e7c83"} />
         </p>
       </div>
