@@ -340,12 +340,16 @@ body {
   padding: 48px 0;
   background: #f4f9f9;
   box-sizing: border-box;
+  display: flex;
+  overflow: hidden; /* ← add this */
 }
 
 .offersSection__inner {
   max-width: 420px;
   margin: 0 auto;
   padding: 0 16px;
+   box-sizing: border-box; /* ← add this */
+  width: 100%;            /* ← add this */
 }
 
 .offersSection__title {
@@ -450,8 +454,33 @@ body {
 /* =========================
  OFFERS META 
 ========================= */
-
+/* In your existing .offersMeta rule, change to column on mobile */
 .offersMeta {
+  display: flex;
+  gap: 0;
+  margin: 16px 0 10px;
+  border: 2px solid #333;
+  border-radius: 14px;
+  overflow: hidden;
+  flex-direction: column; /* ← add this */
+  width: 100%;          /* ← add this */
+  box-sizing: border-box; /* ← add this */
+}
+
+.offersMeta__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 8px;
+  border-right: none;        /* ← remove right border on mobile */
+  border-bottom: 2px solid #333; /* ← use bottom border instead */
+}
+
+.offersMeta__item:last-child {
+  border-bottom: none; /* ← was border-right, now border-bottom */
+}
+/* .offersMeta {
   display: flex;
   gap: 0;
   margin: 16px 0 10px;
@@ -471,13 +500,14 @@ body {
 
 .offersMeta__item:last-child {
   border-right: none;
-}
+} */
 
 .offersMeta__value {
   font-size: 1.5rem;
   font-weight: 800;
   color: #2e7c83;
   line-height: 1;
+  
 }
 
 .offersMeta__unit {
@@ -491,6 +521,7 @@ body {
   letter-spacing: 0.05em;
   color: #333;
   margin-top: 4px;
+  text-align: center;
 }
 
 
@@ -908,6 +939,18 @@ FOOTER SECTION
   }
   .footer__inner {
     max-width: 640px;
+  }
+  .offersMeta {
+    flex-direction: row;
+  }
+
+  .offersMeta__item {
+    border-right: 2px solid #333;
+    border-bottom: none;
+  }
+
+  .offersMeta__item:last-child {
+    border-right: none;
   }
 }
 

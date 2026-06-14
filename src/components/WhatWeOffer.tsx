@@ -48,16 +48,20 @@ export default function WhatWeOffer() {
         </div>
         <div className="offersMeta">
           <div className="offersMeta__item">
-            <span className="offersMeta__value">9<span className="offersMeta__unit"> Week</span></span>
-            <span className="offersMeta__label">Program</span>
+            <span className="offersMeta__value">Duration<span className="offersMeta__unit"></span></span>
+            <span className="offersMeta__label">Jun 29th - Aug 14th</span>
           </div>
           <div className="offersMeta__item">
-            <span className="offersMeta__value">90<span className="offersMeta__unit"> Min</span></span>
-            <span className="offersMeta__label">Class/Week</span>
+            <span className="offersMeta__value">Time<span className="offersMeta__unit"></span></span>
+            <span className="offersMeta__label">2:30p - 4p (Mon OR Fri)</span>
           </div>
           <div className="offersMeta__item">
-            <span className="offersMeta__value">$300</span>
-            <span className="offersMeta__label">Per Child</span>
+            <span className="offersMeta__value">Cost</span>
+            <span className="offersMeta__label">$300 Per Child</span>
+          </div>
+          <div className="offersMeta__item">
+            <span className="offersMeta__value">Location</span>
+            <span className="offersMeta__label">Children of Intelligence <br/> 30 S 57th St. Phila, PA 19139</span>
           </div>
         </div>
         <div className="offersCallouts">
